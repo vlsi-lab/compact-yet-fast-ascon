@@ -4,14 +4,10 @@ Questo repository contiene l'implementazione RTL di ASCON-128, con supporto a:
 - Simulazione RTL
 - Sintesi ASIC tramite Design Compiler
 - Verifica automatica contro un modello Python golden
-- Simulazione post-sintesi
 
 ## 📁 Struttura principale
 
 - `rtl/` → Codice RTL Verilog/SystemVerilog
-- `build/` → Directory di build automatica
-- `netlist/` → Output della sintesi ASIC (netlist)
-- `synth/report/` → Report generati dalla sintesi
 - `test_ascon.py` → Golden model per confronto cifratura
 - `tb/` → Testbench C++ (tramite Verilator)
 - `Makefile` → Automazione completa del flusso
@@ -19,12 +15,6 @@ Questo repository contiene l'implementazione RTL di ASCON-128, con supporto a:
 ---
 
 ## ⚙️ Setup iniziale
-
-> Esegui questo comando **prima di tutto** per attivare l’ambiente (tools come Questasim, Design Compiler, ecc.):
-
-```bash
-source setup_env.sh
-
 
 ### ▶️ `make simulation`
 
@@ -103,6 +93,3 @@ vcd2fst dump.vcd dump.fst
 gtkwave dump.fst wave.gtk &
 ```
 
-💡 Consigliato per un'analisi visiva del comportamento del wrapper sintetizzato su FPGA.
-
-💻 Per la generazione del bitstream FPGA, ci sposteremo sul server `radagast.polito.it`, in quanto lì sono disponibili i file di configurazione `part` e l'installazione completa di **Vivado**.
