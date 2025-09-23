@@ -1,0 +1,75 @@
+ 
+****************************************
+Report : area
+Design : ascon_top
+Version: R-2020.09-SP2
+Date   : Sun Sep  7 18:35:00 2025
+****************************************
+
+Library(s) Used:
+
+    tcbn65lplvttc (File: /software/dk/tsmc65/digital/Front_End/timing_power_noise/NLDM/tcbn65lplvt_220a/tcbn65lplvttc.db)
+
+Number of ports:                        11225
+Number of nets:                         22852
+Number of cells:                        17770
+Number of combinational cells:          13447
+Number of sequential cells:              4302
+Number of macros/black boxes:               0
+Number of buf/inv:                       3498
+Number of references:                      78
+
+Combinational area:              35896.320303
+Buf/Inv area:                     3901.320151
+Noncombinational area:           32153.040401
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 68049.360704
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------
+ascon_top                         68049.3607    100.0  16249.3201   2196.0000  0.0000  ascon_top
+gen_no_changing.gen_sbox[0].u_sbox
+                                   2115.3600      3.1    875.1600   1240.2000  0.0000  ascon_sbox_d2_10
+gen_no_changing.gen_sbox[10].u_sbox
+                                   1747.8000      2.6    707.7600   1040.0400  0.0000  ascon_sbox_d2_0
+gen_no_changing.gen_sbox[1].u_sbox
+                                   2115.7200      3.1    875.5200   1240.2000  0.0000  ascon_sbox_d2_9
+gen_no_changing.gen_sbox[2].u_sbox
+                                   2116.0800      3.1    875.8800   1240.2000  0.0000  ascon_sbox_d2_8
+gen_no_changing.gen_sbox[3].u_sbox
+                                   2113.2000      3.1    873.0000   1240.2000  0.0000  ascon_sbox_d2_7
+gen_no_changing.gen_sbox[4].u_sbox
+                                   2111.7600      3.1    871.5600   1240.2000  0.0000  ascon_sbox_d2_6
+gen_no_changing.gen_sbox[5].u_sbox
+                                   2110.6800      3.1    870.4800   1240.2000  0.0000  ascon_sbox_d2_5
+gen_no_changing.gen_sbox[6].u_sbox
+                                   2112.4800      3.1    872.2800   1240.2000  0.0000  ascon_sbox_d2_4
+gen_no_changing.gen_sbox[7].u_sbox
+                                   2114.6400      3.1    874.4400   1240.2000  0.0000  ascon_sbox_d2_3
+gen_no_changing.gen_sbox[8].u_sbox
+                                   2115.0000      3.1    874.8000   1240.2000  0.0000  ascon_sbox_d2_2
+gen_no_changing.gen_sbox[9].u_sbox
+                                   1755.7200      2.6    713.5200   1042.2000  0.0000  ascon_sbox_d2_1
+gen_state_regs[0].state_reg_share  5252.7600      7.7   2718.3600   2534.4000  0.0000  state_register_5
+gen_state_regs[1].state_reg_share  4006.8000      5.9   1472.4000   2534.4000  0.0000  state_register_4
+gen_state_regs[2].state_reg_share  4004.6400      5.9   1470.2400   2534.4000  0.0000  state_register_3
+gen_state_regs[3].state_reg_share  4011.8400      5.9   1477.4400   2534.4000  0.0000  state_register_2
+gen_state_regs[4].state_reg_share  4001.0400      5.9   1466.6400   2534.4000  0.0000  state_register_1
+gen_state_regs[5].state_reg_share  3997.0800      5.9   1462.6800   2534.4000  0.0000  state_register_0
+key1_reg                            696.9600      1.0      5.7600    691.2000  0.0000  register_1
+key2_reg                            696.9600      1.0      5.7600    691.2000  0.0000  register_0
+mealy_fsm                           407.5200      0.6    283.3200    124.2000  0.0000  fsm
+share_creator                         0.0000      0.0      0.0000      0.0000  0.0000  shareCreator
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------
+Total                                                  35896.3203  32153.0404  0.0000
+
+1

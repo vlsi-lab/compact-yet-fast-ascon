@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : ascon_datapath
+Version: R-2020.09-SP2
+Date   : Fri Sep 12 16:36:46 2025
+****************************************
+
+Library(s) Used:
+
+    tcbn65lplvttc (File: /software/dk/tsmc65/digital/Front_End/timing_power_noise/NLDM/tcbn65lplvt_220a/tcbn65lplvttc.db)
+
+Number of ports:                        11198
+Number of nets:                         21652
+Number of cells:                        14990
+Number of combinational cells:          10682
+Number of sequential cells:              4288
+Number of macros/black boxes:               0
+Number of buf/inv:                       2095
+Number of references:                      63
+
+Combinational area:              32243.040165
+Buf/Inv area:                     2303.640090
+Noncombinational area:           33620.400410
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 65863.440574
+Total area:                 undefined
+1

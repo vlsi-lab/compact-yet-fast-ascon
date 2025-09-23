@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : ascon_datapath
+Version: R-2020.09-SP2
+Date   : Fri Sep 12 16:36:46 2025
+****************************************
+
+
+Library(s) Used:
+
+    tcbn65lplvttc (File: /software/dk/tsmc65/digital/Front_End/timing_power_noise/NLDM/tcbn65lplvt_220a/tcbn65lplvttc.db)
+
+
+Operating Conditions: NCCOM   Library: tcbn65lplvttc
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ascon_datapath         ZeroWireload      tcbn65lplvttc
+state_register_5       ZeroWireload      tcbn65lplvttc
+state_register_4       ZeroWireload      tcbn65lplvttc
+register_1             ZeroWireload      tcbn65lplvttc
+shareCreator           ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_10       ZeroWireload      tcbn65lplvttc
+state_register_0       ZeroWireload      tcbn65lplvttc
+state_register_1       ZeroWireload      tcbn65lplvttc
+state_register_2       ZeroWireload      tcbn65lplvttc
+state_register_3       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_0        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_1        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_2        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_3        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_4        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_5        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_6        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_7        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_8        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_9        ZeroWireload      tcbn65lplvttc
+register_0             ZeroWireload      tcbn65lplvttc
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  47.2477 mW   (96%)
+  Net Switching Power  =   2.0471 mW    (4%)
+                         ---------
+Total Dynamic Power    =  49.2949 mW  (100%)
+
+Cell Leakage Power     =  26.2010 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          44.6230            0.5612        1.3605e+04           45.1978  (  91.64%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      2.6247            1.4859        1.2596e+04            4.1232  (   8.36%)
+--------------------------------------------------------------------------------------------------
+Total             47.2478 mW         2.0471 mW     2.6201e+04 nW        49.3210 mW
+1

@@ -1,0 +1,1066 @@
+Warning: Design 'ascon_top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : ascon_top
+Version: R-2020.09-SP2
+Date   : Thu Sep 11 17:44:11 2025
+****************************************
+
+Operating Conditions: NCCOM   Library: tcbn65lplvttc
+Wire Load Model Mode: segmented
+
+  Startpoint: mealy_fsm/current_state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: key2_reg/reg_q_reg[42]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ascon_sbox_d2_62   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_61   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_60   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_59   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_58   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_57   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_56   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_55   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_54   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_53   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_52   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_51   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_50   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_49   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_48   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_47   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_46   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_45   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_44   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_43   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_42   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_41   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_40   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_39   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_38   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_37   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_36   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_35   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_34   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_33   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_32   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_31   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_30   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_29   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_28   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_27   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_26   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_25   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_24   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_23   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_22   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_21   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_20   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_19   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_18   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_17   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_16   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_15   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_14   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_13   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_12   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_11   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_63   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[3]/CP (DFCND1LVT)           0.00       0.00 r
+  mealy_fsm/current_state_reg[3]/Q (DFCND1LVT)            0.12       0.12 f
+  mealy_fsm/U9/ZN (NR2XD0LVT)                             0.05       0.17 r
+  mealy_fsm/U77/ZN (ND2D0LVT)                             0.09       0.26 f
+  mealy_fsm/U7/ZN (NR2D3LVT)                              0.24       0.50 r
+  mealy_fsm/reg_key2_load (fsm)                           0.00       0.50 r
+  key2_reg/load (register_0)                              0.00       0.50 r
+  key2_reg/U2/Z (BUFFD1LVT)                               0.24       0.74 r
+  key2_reg/reg_q_reg[42]/E (EDFCNQD1LVT)                  0.00       0.74 r
+  data arrival time                                                  0.74
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  key2_reg/reg_q_reg[42]/CP (EDFCNQD1LVT)                 0.00       1.00 r
+  library setup time                                     -0.12       0.88
+  data required time                                                 0.88
+  --------------------------------------------------------------------------
+  data required time                                                 0.88
+  data arrival time                                                 -0.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: mealy_fsm/current_state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: key2_reg/reg_q_reg[41]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ascon_sbox_d2_62   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_61   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_60   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_59   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_58   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_57   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_56   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_55   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_54   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_53   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_52   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_51   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_50   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_49   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_48   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_47   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_46   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_45   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_44   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_43   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_42   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_41   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_40   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_39   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_38   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_37   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_36   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_35   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_34   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_33   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_32   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_31   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_30   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_29   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_28   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_27   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_26   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_25   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_24   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_23   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_22   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_21   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_20   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_19   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_18   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_17   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_16   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_15   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_14   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_13   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_12   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_11   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_63   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[3]/CP (DFCND1LVT)           0.00       0.00 r
+  mealy_fsm/current_state_reg[3]/Q (DFCND1LVT)            0.12       0.12 f
+  mealy_fsm/U9/ZN (NR2XD0LVT)                             0.05       0.17 r
+  mealy_fsm/U77/ZN (ND2D0LVT)                             0.09       0.26 f
+  mealy_fsm/U7/ZN (NR2D3LVT)                              0.24       0.50 r
+  mealy_fsm/reg_key2_load (fsm)                           0.00       0.50 r
+  key2_reg/load (register_0)                              0.00       0.50 r
+  key2_reg/U2/Z (BUFFD1LVT)                               0.24       0.74 r
+  key2_reg/reg_q_reg[41]/E (EDFCNQD1LVT)                  0.00       0.74 r
+  data arrival time                                                  0.74
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  key2_reg/reg_q_reg[41]/CP (EDFCNQD1LVT)                 0.00       1.00 r
+  library setup time                                     -0.12       0.88
+  data required time                                                 0.88
+  --------------------------------------------------------------------------
+  data required time                                                 0.88
+  data arrival time                                                 -0.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: mealy_fsm/current_state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: key2_reg/reg_q_reg[40]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ascon_sbox_d2_62   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_61   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_60   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_59   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_58   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_57   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_56   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_55   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_54   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_53   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_52   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_51   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_50   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_49   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_48   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_47   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_46   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_45   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_44   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_43   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_42   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_41   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_40   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_39   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_38   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_37   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_36   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_35   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_34   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_33   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_32   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_31   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_30   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_29   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_28   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_27   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_26   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_25   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_24   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_23   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_22   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_21   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_20   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_19   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_18   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_17   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_16   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_15   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_14   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_13   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_12   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_11   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_63   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[3]/CP (DFCND1LVT)           0.00       0.00 r
+  mealy_fsm/current_state_reg[3]/Q (DFCND1LVT)            0.12       0.12 f
+  mealy_fsm/U9/ZN (NR2XD0LVT)                             0.05       0.17 r
+  mealy_fsm/U77/ZN (ND2D0LVT)                             0.09       0.26 f
+  mealy_fsm/U7/ZN (NR2D3LVT)                              0.24       0.50 r
+  mealy_fsm/reg_key2_load (fsm)                           0.00       0.50 r
+  key2_reg/load (register_0)                              0.00       0.50 r
+  key2_reg/U2/Z (BUFFD1LVT)                               0.24       0.74 r
+  key2_reg/reg_q_reg[40]/E (EDFCNQD1LVT)                  0.00       0.74 r
+  data arrival time                                                  0.74
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  key2_reg/reg_q_reg[40]/CP (EDFCNQD1LVT)                 0.00       1.00 r
+  library setup time                                     -0.12       0.88
+  data required time                                                 0.88
+  --------------------------------------------------------------------------
+  data required time                                                 0.88
+  data arrival time                                                 -0.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: mealy_fsm/current_state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: key2_reg/reg_q_reg[39]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ascon_sbox_d2_62   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_61   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_60   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_59   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_58   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_57   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_56   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_55   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_54   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_53   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_52   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_51   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_50   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_49   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_48   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_47   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_46   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_45   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_44   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_43   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_42   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_41   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_40   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_39   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_38   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_37   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_36   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_35   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_34   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_33   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_32   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_31   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_30   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_29   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_28   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_27   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_26   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_25   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_24   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_23   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_22   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_21   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_20   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_19   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_18   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_17   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_16   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_15   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_14   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_13   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_12   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_11   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_63   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[3]/CP (DFCND1LVT)           0.00       0.00 r
+  mealy_fsm/current_state_reg[3]/Q (DFCND1LVT)            0.12       0.12 f
+  mealy_fsm/U9/ZN (NR2XD0LVT)                             0.05       0.17 r
+  mealy_fsm/U77/ZN (ND2D0LVT)                             0.09       0.26 f
+  mealy_fsm/U7/ZN (NR2D3LVT)                              0.24       0.50 r
+  mealy_fsm/reg_key2_load (fsm)                           0.00       0.50 r
+  key2_reg/load (register_0)                              0.00       0.50 r
+  key2_reg/U2/Z (BUFFD1LVT)                               0.24       0.74 r
+  key2_reg/reg_q_reg[39]/E (EDFCNQD1LVT)                  0.00       0.74 r
+  data arrival time                                                  0.74
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  key2_reg/reg_q_reg[39]/CP (EDFCNQD1LVT)                 0.00       1.00 r
+  library setup time                                     -0.12       0.88
+  data required time                                                 0.88
+  --------------------------------------------------------------------------
+  data required time                                                 0.88
+  data arrival time                                                 -0.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: mealy_fsm/current_state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: key2_reg/reg_q_reg[38]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ascon_sbox_d2_62   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_61   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_60   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_59   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_58   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_57   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_56   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_55   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_54   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_53   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_52   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_51   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_50   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_49   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_48   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_47   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_46   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_45   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_44   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_43   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_42   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_41   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_40   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_39   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_38   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_37   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_36   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_35   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_34   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_33   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_32   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_31   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_30   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_29   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_28   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_27   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_26   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_25   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_24   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_23   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_22   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_21   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_20   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_19   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_18   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_17   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_16   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_15   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_14   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_13   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_12   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_11   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_63   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[3]/CP (DFCND1LVT)           0.00       0.00 r
+  mealy_fsm/current_state_reg[3]/Q (DFCND1LVT)            0.12       0.12 f
+  mealy_fsm/U9/ZN (NR2XD0LVT)                             0.05       0.17 r
+  mealy_fsm/U77/ZN (ND2D0LVT)                             0.09       0.26 f
+  mealy_fsm/U7/ZN (NR2D3LVT)                              0.24       0.50 r
+  mealy_fsm/reg_key2_load (fsm)                           0.00       0.50 r
+  key2_reg/load (register_0)                              0.00       0.50 r
+  key2_reg/U2/Z (BUFFD1LVT)                               0.24       0.74 r
+  key2_reg/reg_q_reg[38]/E (EDFCNQD1LVT)                  0.00       0.74 r
+  data arrival time                                                  0.74
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  key2_reg/reg_q_reg[38]/CP (EDFCNQD1LVT)                 0.00       1.00 r
+  library setup time                                     -0.12       0.88
+  data required time                                                 0.88
+  --------------------------------------------------------------------------
+  data required time                                                 0.88
+  data arrival time                                                 -0.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: mealy_fsm/current_state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: key2_reg/reg_q_reg[37]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ascon_sbox_d2_62   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_61   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_60   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_59   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_58   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_57   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_56   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_55   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_54   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_53   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_52   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_51   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_50   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_49   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_48   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_47   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_46   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_45   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_44   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_43   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_42   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_41   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_40   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_39   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_38   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_37   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_36   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_35   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_34   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_33   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_32   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_31   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_30   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_29   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_28   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_27   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_26   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_25   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_24   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_23   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_22   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_21   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_20   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_19   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_18   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_17   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_16   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_15   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_14   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_13   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_12   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_11   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_63   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[3]/CP (DFCND1LVT)           0.00       0.00 r
+  mealy_fsm/current_state_reg[3]/Q (DFCND1LVT)            0.12       0.12 f
+  mealy_fsm/U9/ZN (NR2XD0LVT)                             0.05       0.17 r
+  mealy_fsm/U77/ZN (ND2D0LVT)                             0.09       0.26 f
+  mealy_fsm/U7/ZN (NR2D3LVT)                              0.24       0.50 r
+  mealy_fsm/reg_key2_load (fsm)                           0.00       0.50 r
+  key2_reg/load (register_0)                              0.00       0.50 r
+  key2_reg/U2/Z (BUFFD1LVT)                               0.24       0.74 r
+  key2_reg/reg_q_reg[37]/E (EDFCNQD1LVT)                  0.00       0.74 r
+  data arrival time                                                  0.74
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  key2_reg/reg_q_reg[37]/CP (EDFCNQD1LVT)                 0.00       1.00 r
+  library setup time                                     -0.12       0.88
+  data required time                                                 0.88
+  --------------------------------------------------------------------------
+  data required time                                                 0.88
+  data arrival time                                                 -0.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: mealy_fsm/current_state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: key2_reg/reg_q_reg[23]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ascon_sbox_d2_62   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_61   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_60   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_59   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_58   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_57   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_56   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_55   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_54   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_53   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_52   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_51   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_50   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_49   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_48   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_47   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_46   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_45   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_44   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_43   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_42   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_41   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_40   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_39   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_38   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_37   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_36   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_35   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_34   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_33   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_32   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_31   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_30   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_29   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_28   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_27   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_26   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_25   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_24   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_23   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_22   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_21   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_20   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_19   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_18   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_17   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_16   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_15   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_14   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_13   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_12   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_11   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_63   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[3]/CP (DFCND1LVT)           0.00       0.00 r
+  mealy_fsm/current_state_reg[3]/Q (DFCND1LVT)            0.12       0.12 f
+  mealy_fsm/U9/ZN (NR2XD0LVT)                             0.05       0.17 r
+  mealy_fsm/U77/ZN (ND2D0LVT)                             0.09       0.26 f
+  mealy_fsm/U7/ZN (NR2D3LVT)                              0.24       0.50 r
+  mealy_fsm/reg_key2_load (fsm)                           0.00       0.50 r
+  key2_reg/load (register_0)                              0.00       0.50 r
+  key2_reg/U2/Z (BUFFD1LVT)                               0.24       0.74 r
+  key2_reg/reg_q_reg[23]/E (EDFCNQD1LVT)                  0.00       0.74 r
+  data arrival time                                                  0.74
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  key2_reg/reg_q_reg[23]/CP (EDFCNQD1LVT)                 0.00       1.00 r
+  library setup time                                     -0.12       0.88
+  data required time                                                 0.88
+  --------------------------------------------------------------------------
+  data required time                                                 0.88
+  data arrival time                                                 -0.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: mealy_fsm/current_state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: key2_reg/reg_q_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ascon_sbox_d2_62   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_61   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_60   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_59   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_58   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_57   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_56   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_55   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_54   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_53   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_52   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_51   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_50   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_49   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_48   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_47   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_46   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_45   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_44   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_43   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_42   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_41   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_40   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_39   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_38   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_37   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_36   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_35   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_34   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_33   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_32   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_31   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_30   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_29   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_28   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_27   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_26   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_25   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_24   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_23   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_22   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_21   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_20   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_19   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_18   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_17   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_16   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_15   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_14   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_13   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_12   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_11   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_63   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[3]/CP (DFCND1LVT)           0.00       0.00 r
+  mealy_fsm/current_state_reg[3]/Q (DFCND1LVT)            0.12       0.12 f
+  mealy_fsm/U9/ZN (NR2XD0LVT)                             0.05       0.17 r
+  mealy_fsm/U77/ZN (ND2D0LVT)                             0.09       0.26 f
+  mealy_fsm/U7/ZN (NR2D3LVT)                              0.24       0.50 r
+  mealy_fsm/reg_key2_load (fsm)                           0.00       0.50 r
+  key2_reg/load (register_0)                              0.00       0.50 r
+  key2_reg/U2/Z (BUFFD1LVT)                               0.24       0.74 r
+  key2_reg/reg_q_reg[11]/E (EDFCNQD1LVT)                  0.00       0.74 r
+  data arrival time                                                  0.74
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  key2_reg/reg_q_reg[11]/CP (EDFCNQD1LVT)                 0.00       1.00 r
+  library setup time                                     -0.12       0.88
+  data required time                                                 0.88
+  --------------------------------------------------------------------------
+  data required time                                                 0.88
+  data arrival time                                                 -0.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: mealy_fsm/current_state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: key2_reg/reg_q_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ascon_sbox_d2_62   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_61   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_60   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_59   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_58   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_57   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_56   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_55   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_54   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_53   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_52   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_51   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_50   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_49   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_48   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_47   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_46   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_45   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_44   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_43   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_42   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_41   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_40   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_39   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_38   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_37   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_36   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_35   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_34   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_33   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_32   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_31   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_30   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_29   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_28   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_27   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_26   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_25   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_24   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_23   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_22   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_21   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_20   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_19   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_18   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_17   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_16   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_15   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_14   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_13   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_12   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_11   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_63   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[3]/CP (DFCND1LVT)           0.00       0.00 r
+  mealy_fsm/current_state_reg[3]/Q (DFCND1LVT)            0.12       0.12 f
+  mealy_fsm/U9/ZN (NR2XD0LVT)                             0.05       0.17 r
+  mealy_fsm/U77/ZN (ND2D0LVT)                             0.09       0.26 f
+  mealy_fsm/U7/ZN (NR2D3LVT)                              0.24       0.50 r
+  mealy_fsm/reg_key2_load (fsm)                           0.00       0.50 r
+  key2_reg/load (register_0)                              0.00       0.50 r
+  key2_reg/U2/Z (BUFFD1LVT)                               0.24       0.74 r
+  key2_reg/reg_q_reg[10]/E (EDFCNQD1LVT)                  0.00       0.74 r
+  data arrival time                                                  0.74
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  key2_reg/reg_q_reg[10]/CP (EDFCNQD1LVT)                 0.00       1.00 r
+  library setup time                                     -0.12       0.88
+  data required time                                                 0.88
+  --------------------------------------------------------------------------
+  data required time                                                 0.88
+  data arrival time                                                 -0.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: mealy_fsm/current_state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: key2_reg/reg_q_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ascon_sbox_d2_62   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_61   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_60   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_59   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_58   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_57   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_56   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_55   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_54   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_53   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_52   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_51   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_50   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_49   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_48   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_47   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_46   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_45   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_44   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_43   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_42   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_41   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_40   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_39   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_38   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_37   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_36   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_35   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_34   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_33   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_32   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_31   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_30   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_29   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_28   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_27   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_26   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_25   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_24   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_23   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_22   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_21   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_20   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_19   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_18   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_17   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_16   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_15   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_14   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_13   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_12   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_11   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_63   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[3]/CP (DFCND1LVT)           0.00       0.00 r
+  mealy_fsm/current_state_reg[3]/Q (DFCND1LVT)            0.12       0.12 f
+  mealy_fsm/U9/ZN (NR2XD0LVT)                             0.05       0.17 r
+  mealy_fsm/U77/ZN (ND2D0LVT)                             0.09       0.26 f
+  mealy_fsm/U7/ZN (NR2D3LVT)                              0.24       0.50 r
+  mealy_fsm/reg_key2_load (fsm)                           0.00       0.50 r
+  key2_reg/load (register_0)                              0.00       0.50 r
+  key2_reg/U2/Z (BUFFD1LVT)                               0.24       0.74 r
+  key2_reg/reg_q_reg[8]/E (EDFCNQD1LVT)                   0.00       0.74 r
+  data arrival time                                                  0.74
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  key2_reg/reg_q_reg[8]/CP (EDFCNQD1LVT)                  0.00       1.00 r
+  library setup time                                     -0.12       0.88
+  data required time                                                 0.88
+  --------------------------------------------------------------------------
+  data required time                                                 0.88
+  data arrival time                                                 -0.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+1

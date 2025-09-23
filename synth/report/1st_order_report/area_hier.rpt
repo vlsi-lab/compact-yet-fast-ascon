@@ -1,0 +1,82 @@
+ 
+****************************************
+Report : area
+Design : ascon_top
+Version: R-2020.09-SP2
+Date   : Sun Sep  7 18:13:45 2025
+****************************************
+
+Library(s) Used:
+
+    tcbn65lplvttc (File: /software/dk/tsmc65/digital/Front_End/timing_power_noise/NLDM/tcbn65lplvt_220a/tcbn65lplvttc.db)
+
+Number of ports:                         6313
+Number of nets:                         15594
+Number of cells:                        11030
+Number of combinational cells:           9219
+Number of sequential cells:              1772
+Number of macros/black boxes:               0
+Number of buf/inv:                       1576
+Number of references:                      96
+
+Combinational area:              21977.280349
+Buf/Inv area:                     1750.680068
+Noncombinational area:           13370.400219
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 35347.680568
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------
+ascon_top                         35347.6806    100.0  12695.0402   2438.6400  0.0000  ascon_top
+gen_no_cog.gen_sbox[0].u_sbox       284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_31
+gen_no_cog.gen_sbox[10].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_21
+gen_no_cog.gen_sbox[11].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_20
+gen_no_cog.gen_sbox[12].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_19
+gen_no_cog.gen_sbox[13].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_18
+gen_no_cog.gen_sbox[14].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_17
+gen_no_cog.gen_sbox[15].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_16
+gen_no_cog.gen_sbox[16].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_15
+gen_no_cog.gen_sbox[17].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_14
+gen_no_cog.gen_sbox[18].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_13
+gen_no_cog.gen_sbox[19].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_12
+gen_no_cog.gen_sbox[1].u_sbox       284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_30
+gen_no_cog.gen_sbox[20].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_11
+gen_no_cog.gen_sbox[21].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_10
+gen_no_cog.gen_sbox[22].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_9
+gen_no_cog.gen_sbox[23].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_8
+gen_no_cog.gen_sbox[24].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_7
+gen_no_cog.gen_sbox[25].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_6
+gen_no_cog.gen_sbox[26].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_5
+gen_no_cog.gen_sbox[27].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_4
+gen_no_cog.gen_sbox[28].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_3
+gen_no_cog.gen_sbox[29].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_2
+gen_no_cog.gen_sbox[2].u_sbox       284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_29
+gen_no_cog.gen_sbox[30].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_1
+gen_no_cog.gen_sbox[31].u_sbox      284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_0
+gen_no_cog.gen_sbox[3].u_sbox       284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_28
+gen_no_cog.gen_sbox[4].u_sbox       284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_27
+gen_no_cog.gen_sbox[5].u_sbox       284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_26
+gen_no_cog.gen_sbox[6].u_sbox       284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_25
+gen_no_cog.gen_sbox[7].u_sbox       284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_24
+gen_no_cog.gen_sbox[8].u_sbox       284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_23
+gen_no_cog.gen_sbox[9].u_sbox       284.7600      0.8    147.9600    136.8000  0.0000  ascon_sbox_d2_22
+gen_state_regs[0].state_reg_share  4637.1600     13.1   2102.7600   2534.4000  0.0000  state_register_1
+gen_state_regs[1].state_reg_share  3542.4001     10.0   1008.0000   2534.4000  0.0000  state_register_0
+key1_reg                            696.9600      2.0      5.7600    691.2000  0.0000  register_1
+key2_reg                            694.0800      2.0      2.8800    691.2000  0.0000  register_0
+lfst_inst                           525.2400      1.5    525.2400      0.0000  0.0000  lfsr
+mealy_fsm                           372.2400      1.1    269.2800    102.9600  0.0000  fsm
+share_creator                       633.6000      1.8    633.6000      0.0000  0.0000  shareCreator
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------
+Total                                                  21977.2803  13370.4002  0.0000
+
+1

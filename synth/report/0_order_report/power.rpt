@@ -1,0 +1,120 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : ascon_top
+Version: R-2020.09-SP2
+Date   : Thu Sep 11 17:44:11 2025
+****************************************
+
+
+Library(s) Used:
+
+    tcbn65lplvttc (File: /software/dk/tsmc65/digital/Front_End/timing_power_noise/NLDM/tcbn65lplvt_220a/tcbn65lplvttc.db)
+
+
+Operating Conditions: NCCOM   Library: tcbn65lplvttc
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ascon_top              ZeroWireload      tcbn65lplvttc
+fsm                    ZeroWireload      tcbn65lplvttc
+register_1             ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_63       ZeroWireload      tcbn65lplvttc
+register_0             ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_0        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_1        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_2        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_3        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_4        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_5        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_6        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_7        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_8        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_9        ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_10       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_11       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_12       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_13       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_14       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_15       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_16       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_17       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_18       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_19       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_20       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_21       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_22       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_23       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_24       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_25       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_26       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_27       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_28       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_29       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_30       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_31       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_32       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_33       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_34       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_35       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_36       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_37       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_38       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_39       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_40       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_41       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_42       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_43       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_44       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_45       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_46       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_47       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_48       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_49       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_50       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_51       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_52       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_53       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_54       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_55       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_56       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_57       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_58       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_59       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_60       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_61       ZeroWireload      tcbn65lplvttc
+ascon_sbox_d2_62       ZeroWireload      tcbn65lplvttc
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   9.7452 mW   (87%)
+  Net Switching Power  =   1.4828 mW   (13%)
+                         ---------
+Total Dynamic Power    =  11.2280 mW  (100%)
+
+Cell Leakage Power     =   6.0783 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.8158            0.9776        1.9286e+03            1.7953  (  15.98%)
+register           8.5157            0.1277        2.6893e+03            8.6461  (  76.98%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.4138            0.3749        1.4605e+03            0.7901  (   7.03%)
+--------------------------------------------------------------------------------------------------
+Total              9.7452 mW         1.4802 mW     6.0783e+03 nW        11.2315 mW
+1

@@ -1,0 +1,820 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : ascon_top
+Version: R-2020.09-SP2
+Date   : Sun Sep  7 18:35:00 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: NCCOM   Library: tcbn65lplvttc
+Wire Load Model Mode: segmented
+
+  Startpoint: mealy_fsm/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_state_regs[2].state_reg_share/state_reg[1][63]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_register_1   ZeroWireload          tcbn65lplvttc
+  state_register_0   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  state_register_3   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  state_register_2   ZeroWireload          tcbn65lplvttc
+  state_register_4   ZeroWireload          tcbn65lplvttc
+  state_register_5   ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[2]/CP (DFCNQD4LVT)          0.00 #     0.00 r
+  mealy_fsm/current_state_reg[2]/Q (DFCNQD4LVT)           0.13       0.13 r
+  mealy_fsm/U19/ZN (INVD2LVT)                             0.02       0.15 f
+  mealy_fsm/U17/ZN (ND2D2LVT)                             0.03       0.18 r
+  mealy_fsm/U56/ZN (OAI211D1LVT)                          0.04       0.22 f
+  mealy_fsm/sel_masked_round (fsm)                        0.00       0.22 f
+  U6343/ZN (INVD1LVT)                                     0.03       0.24 r
+  U5638/Z (CKBD4LVT)                                      0.04       0.29 r
+  U5505/ZN (CKND2LVT)                                     0.02       0.31 f
+  U5533/Z (BUFFD16LVT)                                    0.08       0.38 f
+  gen_no_changing.gen_sbox[8].u_sbox/sel_masked_round (ascon_sbox_d2_2)
+                                                          0.00       0.38 f
+  gen_no_changing.gen_sbox[8].u_sbox/U13/ZN (INVD6LVT)
+                                                          0.04       0.43 r
+  gen_no_changing.gen_sbox[8].u_sbox/U3/ZN (INVD3LVT)     0.04       0.46 f
+  gen_no_changing.gen_sbox[8].u_sbox/U119/ZN (OAI22D0LVT)
+                                                          0.11       0.58 r
+  gen_no_changing.gen_sbox[8].u_sbox/U255/ZN (IND2D0LVT)
+                                                          0.06       0.63 r
+  gen_no_changing.gen_sbox[8].u_sbox/U256/ZN (MUX2ND0LVT)
+                                                          0.06       0.69 f
+  gen_no_changing.gen_sbox[8].u_sbox/x_out_noMask[2] (ascon_sbox_d2_2)
+                                                          0.00       0.69 f
+  U9153/ZN (AOI22D0LVT)                                   0.09       0.78 r
+  U5541/Z (CKXOR2D0LVT)                                   0.09       0.87 r
+  gen_state_regs[2].state_reg_share/in_shifted_1bit[19] (state_register_3)
+                                                          0.00       0.87 r
+  gen_state_regs[2].state_reg_share/U551/ZN (INVD0LVT)
+                                                          0.02       0.89 f
+  gen_state_regs[2].state_reg_share/U556/ZN (OAI222D0LVT)
+                                                          0.07       0.97 r
+  gen_state_regs[2].state_reg_share/state_reg[1][63]/D (DFCNQD1LVT)
+                                                          0.00       0.97 r
+  data arrival time                                                  0.97
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  gen_state_regs[2].state_reg_share/state_reg[1][63]/CP (DFCNQD1LVT)
+                                                          0.00       1.00 r
+  library setup time                                     -0.03       0.97
+  data required time                                                 0.97
+  --------------------------------------------------------------------------
+  data required time                                                 0.97
+  data arrival time                                                 -0.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: mealy_fsm/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_state_regs[2].state_reg_share/state_reg[1][56]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_register_1   ZeroWireload          tcbn65lplvttc
+  state_register_0   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  state_register_3   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  state_register_2   ZeroWireload          tcbn65lplvttc
+  state_register_4   ZeroWireload          tcbn65lplvttc
+  state_register_5   ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[2]/CP (DFCNQD4LVT)          0.00 #     0.00 r
+  mealy_fsm/current_state_reg[2]/Q (DFCNQD4LVT)           0.13       0.13 r
+  mealy_fsm/U19/ZN (INVD2LVT)                             0.02       0.15 f
+  mealy_fsm/U17/ZN (ND2D2LVT)                             0.03       0.18 r
+  mealy_fsm/U56/ZN (OAI211D1LVT)                          0.04       0.22 f
+  mealy_fsm/sel_masked_round (fsm)                        0.00       0.22 f
+  U6343/ZN (INVD1LVT)                                     0.03       0.24 r
+  U5638/Z (CKBD4LVT)                                      0.04       0.29 r
+  U5534/ZN (INVD2LVT)                                     0.09       0.38 f
+  gen_no_changing.gen_sbox[1].u_sbox/sel_masked_round (ascon_sbox_d2_9)
+                                                          0.00       0.38 f
+  gen_no_changing.gen_sbox[1].u_sbox/U3/ZN (CKND4LVT)     0.06       0.43 r
+  gen_no_changing.gen_sbox[1].u_sbox/U4/ZN (INVD4LVT)     0.03       0.46 f
+  gen_no_changing.gen_sbox[1].u_sbox/U121/ZN (OAI22D0LVT)
+                                                          0.11       0.58 r
+  gen_no_changing.gen_sbox[1].u_sbox/U250/ZN (IND2D0LVT)
+                                                          0.06       0.63 r
+  gen_no_changing.gen_sbox[1].u_sbox/U251/ZN (MUX2ND0LVT)
+                                                          0.06       0.69 f
+  gen_no_changing.gen_sbox[1].u_sbox/x_out_noMask[2] (ascon_sbox_d2_9)
+                                                          0.00       0.69 f
+  U9670/ZN (AOI22D0LVT)                                   0.09       0.78 r
+  U9672/Z (CKXOR2D0LVT)                                   0.09       0.87 r
+  gen_state_regs[2].state_reg_share/in_shifted_1bit[12] (state_register_3)
+                                                          0.00       0.87 r
+  gen_state_regs[2].state_reg_share/U537/ZN (INVD0LVT)
+                                                          0.02       0.89 f
+  gen_state_regs[2].state_reg_share/U542/ZN (OAI222D0LVT)
+                                                          0.07       0.97 r
+  gen_state_regs[2].state_reg_share/state_reg[1][56]/D (DFCNQD1LVT)
+                                                          0.00       0.97 r
+  data arrival time                                                  0.97
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  gen_state_regs[2].state_reg_share/state_reg[1][56]/CP (DFCNQD1LVT)
+                                                          0.00       1.00 r
+  library setup time                                     -0.03       0.97
+  data required time                                                 0.97
+  --------------------------------------------------------------------------
+  data required time                                                 0.97
+  data arrival time                                                 -0.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: mealy_fsm/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_state_regs[0].state_reg_share/state_reg[0][28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_register_1   ZeroWireload          tcbn65lplvttc
+  state_register_0   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  state_register_3   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  state_register_2   ZeroWireload          tcbn65lplvttc
+  state_register_4   ZeroWireload          tcbn65lplvttc
+  state_register_5   ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[2]/CP (DFCNQD4LVT)          0.00 #     0.00 r
+  mealy_fsm/current_state_reg[2]/Q (DFCNQD4LVT)           0.13       0.13 r
+  mealy_fsm/U19/ZN (INVD2LVT)                             0.02       0.15 f
+  mealy_fsm/U17/ZN (ND2D2LVT)                             0.03       0.18 r
+  mealy_fsm/U56/ZN (OAI211D1LVT)                          0.04       0.22 f
+  mealy_fsm/sel_masked_round (fsm)                        0.00       0.22 f
+  U6343/ZN (INVD1LVT)                                     0.03       0.24 r
+  U5638/Z (CKBD4LVT)                                      0.04       0.29 r
+  U6126/ZN (INVD6LVT)                                     0.05       0.33 f
+  gen_no_changing.gen_sbox[6].u_sbox/sel_masked_round (ascon_sbox_d2_4)
+                                                          0.00       0.33 f
+  gen_no_changing.gen_sbox[6].u_sbox/U13/ZN (INVD2LVT)
+                                                          0.07       0.40 r
+  gen_no_changing.gen_sbox[6].u_sbox/U3/ZN (INVD2LVT)     0.05       0.45 f
+  gen_no_changing.gen_sbox[6].u_sbox/U148/ZN (OAI22D0LVT)
+                                                          0.12       0.57 r
+  gen_no_changing.gen_sbox[6].u_sbox/U250/ZN (IND2D0LVT)
+                                                          0.06       0.63 r
+  gen_no_changing.gen_sbox[6].u_sbox/U251/ZN (MUX2ND0LVT)
+                                                          0.06       0.68 f
+  gen_no_changing.gen_sbox[6].u_sbox/x_out_noMask[2] (ascon_sbox_d2_4)
+                                                          0.00       0.68 f
+  U9658/ZN (AOI22D0LVT)                                   0.09       0.77 r
+  U9678/ZN (MUX2ND0LVT)                                   0.08       0.85 f
+  gen_state_regs[0].state_reg_share/in_shifted_dplus1[28] (state_register_5)
+                                                          0.00       0.85 f
+  gen_state_regs[0].state_reg_share/U210/ZN (AOI22D0LVT)
+                                                          0.06       0.91 r
+  gen_state_regs[0].state_reg_share/U212/Z (CKAN2D0LVT)
+                                                          0.05       0.97 r
+  gen_state_regs[0].state_reg_share/U183/ZN (ND2D0LVT)
+                                                          0.02       0.99 f
+  gen_state_regs[0].state_reg_share/state_reg[0][28]/D (DFCNQD1LVT)
+                                                          0.00       0.99 f
+  data arrival time                                                  0.99
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  gen_state_regs[0].state_reg_share/state_reg[0][28]/CP (DFCNQD1LVT)
+                                                          0.00       1.00 r
+  library setup time                                     -0.01       0.99
+  data required time                                                 0.99
+  --------------------------------------------------------------------------
+  data required time                                                 0.99
+  data arrival time                                                 -0.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: mealy_fsm/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_state_regs[4].state_reg_share/state_reg[1][54]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_register_1   ZeroWireload          tcbn65lplvttc
+  state_register_0   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  state_register_3   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  state_register_2   ZeroWireload          tcbn65lplvttc
+  state_register_4   ZeroWireload          tcbn65lplvttc
+  state_register_5   ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[2]/CP (DFCNQD4LVT)          0.00 #     0.00 r
+  mealy_fsm/current_state_reg[2]/Q (DFCNQD4LVT)           0.13       0.13 r
+  mealy_fsm/U19/ZN (INVD2LVT)                             0.02       0.15 f
+  mealy_fsm/U17/ZN (ND2D2LVT)                             0.03       0.18 r
+  mealy_fsm/U56/ZN (OAI211D1LVT)                          0.04       0.22 f
+  mealy_fsm/sel_masked_round (fsm)                        0.00       0.22 f
+  U6343/ZN (INVD1LVT)                                     0.03       0.24 r
+  U5638/Z (CKBD4LVT)                                      0.04       0.29 r
+  U5534/ZN (INVD2LVT)                                     0.09       0.38 f
+  gen_no_changing.gen_sbox[1].u_sbox/sel_masked_round (ascon_sbox_d2_9)
+                                                          0.00       0.38 f
+  gen_no_changing.gen_sbox[1].u_sbox/U3/ZN (CKND4LVT)     0.06       0.43 r
+  gen_no_changing.gen_sbox[1].u_sbox/U4/ZN (INVD4LVT)     0.03       0.46 f
+  gen_no_changing.gen_sbox[1].u_sbox/U134/ZN (OAI22D0LVT)
+                                                          0.11       0.58 r
+  gen_no_changing.gen_sbox[1].u_sbox/U254/ZN (IND2D0LVT)
+                                                          0.06       0.63 r
+  gen_no_changing.gen_sbox[1].u_sbox/U255/ZN (MUX2ND0LVT)
+                                                          0.06       0.69 f
+  gen_no_changing.gen_sbox[1].u_sbox/x_out_noMask[4] (ascon_sbox_d2_9)
+                                                          0.00       0.69 f
+  U9774/ZN (AOI22D0LVT)                                   0.09       0.78 r
+  U9776/Z (CKXOR2D0LVT)                                   0.09       0.87 r
+  gen_state_regs[4].state_reg_share/in_shifted_1bit[12] (state_register_1)
+                                                          0.00       0.87 r
+  gen_state_regs[4].state_reg_share/U6/ZN (INVD0LVT)      0.02       0.90 f
+  gen_state_regs[4].state_reg_share/U538/ZN (OAI222D0LVT)
+                                                          0.07       0.97 r
+  gen_state_regs[4].state_reg_share/state_reg[1][54]/D (DFCNQD1LVT)
+                                                          0.00       0.97 r
+  data arrival time                                                  0.97
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  gen_state_regs[4].state_reg_share/state_reg[1][54]/CP (DFCNQD1LVT)
+                                                          0.00       1.00 r
+  library setup time                                     -0.03       0.97
+  data required time                                                 0.97
+  --------------------------------------------------------------------------
+  data required time                                                 0.97
+  data arrival time                                                 -0.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: mealy_fsm/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_state_regs[0].state_reg_share/state_reg[0][50]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_register_1   ZeroWireload          tcbn65lplvttc
+  state_register_0   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  state_register_3   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  state_register_2   ZeroWireload          tcbn65lplvttc
+  state_register_4   ZeroWireload          tcbn65lplvttc
+  state_register_5   ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[2]/CP (DFCNQD4LVT)          0.00 #     0.00 r
+  mealy_fsm/current_state_reg[2]/Q (DFCNQD4LVT)           0.13       0.13 r
+  mealy_fsm/U4/ZN (ND2D1LVT)                              0.04       0.16 f
+  mealy_fsm/U52/Z (OR2D0LVT)                              0.07       0.23 f
+  mealy_fsm/U32/ZN (NR2D1LVT)                             0.05       0.28 r
+  mealy_fsm/U33/ZN (ND3D0LVT)                             0.06       0.34 f
+  mealy_fsm/U6/ZN (OAI211D2LVT)                           0.05       0.39 r
+  mealy_fsm/sel_padding (fsm)                             0.00       0.39 r
+  U6416/ZN (ND2D0LVT)                                     0.04       0.43 f
+  U5716/ZN (INR2XD0LVT)                                   0.06       0.49 r
+  U5621/ZN (ND2D1LVT)                                     0.04       0.54 f
+  U6418/ZN (ND2D1LVT)                                     0.05       0.59 r
+  U5827/ZN (INVD0LVT)                                     0.03       0.61 f
+  U5831/ZN (NR2XD0LVT)                                    0.06       0.67 r
+  U10741/ZN (ND2D0LVT)                                    0.04       0.71 f
+  U10742/ZN (MUX2ND0LVT)                                  0.06       0.77 f
+  U5642/ZN (AOI22D1LVT)                                   0.04       0.81 r
+  U5521/ZN (OAI211D0LVT)                                  0.05       0.86 f
+  gen_state_regs[0].state_reg_share/data_in[50] (state_register_5)
+                                                          0.00       0.86 f
+  gen_state_regs[0].state_reg_share/U1174/ZN (AOI22D0LVT)
+                                                          0.06       0.93 r
+  gen_state_regs[0].state_reg_share/U1175/ZN (OAI211D0LVT)
+                                                          0.06       0.98 f
+  gen_state_regs[0].state_reg_share/state_reg[0][50]/D (DFCNQD1LVT)
+                                                          0.00       0.98 f
+  data arrival time                                                  0.98
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  gen_state_regs[0].state_reg_share/state_reg[0][50]/CP (DFCNQD1LVT)
+                                                          0.00       1.00 r
+  library setup time                                     -0.01       0.99
+  data required time                                                 0.99
+  --------------------------------------------------------------------------
+  data required time                                                 0.99
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: mealy_fsm/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_state_regs[3].state_reg_share/state_reg[1][61]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_register_1   ZeroWireload          tcbn65lplvttc
+  state_register_0   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  state_register_3   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  state_register_2   ZeroWireload          tcbn65lplvttc
+  state_register_4   ZeroWireload          tcbn65lplvttc
+  state_register_5   ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[2]/CP (DFCNQD4LVT)          0.00 #     0.00 r
+  mealy_fsm/current_state_reg[2]/Q (DFCNQD4LVT)           0.13       0.13 r
+  mealy_fsm/U19/ZN (INVD2LVT)                             0.02       0.15 f
+  mealy_fsm/U17/ZN (ND2D2LVT)                             0.03       0.18 r
+  mealy_fsm/U56/ZN (OAI211D1LVT)                          0.04       0.22 f
+  mealy_fsm/sel_masked_round (fsm)                        0.00       0.22 f
+  U6343/ZN (INVD1LVT)                                     0.03       0.24 r
+  U5638/Z (CKBD4LVT)                                      0.04       0.29 r
+  U5505/ZN (CKND2LVT)                                     0.02       0.31 f
+  U5533/Z (BUFFD16LVT)                                    0.08       0.38 f
+  gen_no_changing.gen_sbox[8].u_sbox/sel_masked_round (ascon_sbox_d2_2)
+                                                          0.00       0.38 f
+  gen_no_changing.gen_sbox[8].u_sbox/U13/ZN (INVD6LVT)
+                                                          0.04       0.43 r
+  gen_no_changing.gen_sbox[8].u_sbox/U3/ZN (INVD3LVT)     0.04       0.46 f
+  gen_no_changing.gen_sbox[8].u_sbox/U122/ZN (OAI22D0LVT)
+                                                          0.11       0.58 r
+  gen_no_changing.gen_sbox[8].u_sbox/U257/ZN (IND2D0LVT)
+                                                          0.06       0.63 r
+  gen_no_changing.gen_sbox[8].u_sbox/U258/ZN (MUX2ND0LVT)
+                                                          0.06       0.69 f
+  gen_no_changing.gen_sbox[8].u_sbox/x_out_noMask[3] (ascon_sbox_d2_2)
+                                                          0.00       0.69 f
+  U9705/ZN (AOI22D0LVT)                                   0.09       0.78 r
+  U9707/Z (CKXOR2D0LVT)                                   0.09       0.87 r
+  gen_state_regs[3].state_reg_share/in_shifted_1bit[19] (state_register_2)
+                                                          0.00       0.87 r
+  gen_state_regs[3].state_reg_share/U560/ZN (INVD0LVT)
+                                                          0.02       0.89 f
+  gen_state_regs[3].state_reg_share/U561/ZN (OAI222D0LVT)
+                                                          0.07       0.96 r
+  gen_state_regs[3].state_reg_share/state_reg[1][61]/D (DFCNQD1LVT)
+                                                          0.00       0.96 r
+  data arrival time                                                  0.96
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  gen_state_regs[3].state_reg_share/state_reg[1][61]/CP (DFCNQD1LVT)
+                                                          0.00       1.00 r
+  library setup time                                     -0.03       0.97
+  data required time                                                 0.97
+  --------------------------------------------------------------------------
+  data required time                                                 0.97
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: mealy_fsm/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_state_regs[0].state_reg_share/state_reg[0][49]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_register_1   ZeroWireload          tcbn65lplvttc
+  state_register_0   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  state_register_3   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  state_register_2   ZeroWireload          tcbn65lplvttc
+  state_register_4   ZeroWireload          tcbn65lplvttc
+  state_register_5   ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[2]/CP (DFCNQD4LVT)          0.00 #     0.00 r
+  mealy_fsm/current_state_reg[2]/Q (DFCNQD4LVT)           0.13       0.13 r
+  mealy_fsm/U4/ZN (ND2D1LVT)                              0.04       0.16 f
+  mealy_fsm/U52/Z (OR2D0LVT)                              0.07       0.23 f
+  mealy_fsm/U32/ZN (NR2D1LVT)                             0.05       0.28 r
+  mealy_fsm/U33/ZN (ND3D0LVT)                             0.06       0.34 f
+  mealy_fsm/U6/ZN (OAI211D2LVT)                           0.05       0.39 r
+  mealy_fsm/sel_padding (fsm)                             0.00       0.39 r
+  U6416/ZN (ND2D0LVT)                                     0.04       0.43 f
+  U5716/ZN (INR2XD0LVT)                                   0.06       0.49 r
+  U5621/ZN (ND2D1LVT)                                     0.04       0.54 f
+  U6418/ZN (ND2D1LVT)                                     0.05       0.59 r
+  U5827/ZN (INVD0LVT)                                     0.03       0.61 f
+  U5831/ZN (NR2XD0LVT)                                    0.06       0.67 r
+  U10733/ZN (ND2D0LVT)                                    0.04       0.71 f
+  U10734/ZN (MUX2ND0LVT)                                  0.06       0.77 f
+  U10736/ZN (AOI22D0LVT)                                  0.05       0.81 r
+  U10740/ZN (OAI211D0LVT)                                 0.06       0.87 f
+  gen_state_regs[0].state_reg_share/data_in[49] (state_register_5)
+                                                          0.00       0.87 f
+  gen_state_regs[0].state_reg_share/U1172/ZN (AOI22D0LVT)
+                                                          0.05       0.92 r
+  gen_state_regs[0].state_reg_share/U25/ZN (OAI211D0LVT)
+                                                          0.06       0.98 f
+  gen_state_regs[0].state_reg_share/state_reg[0][49]/D (DFCNQD1LVT)
+                                                          0.00       0.98 f
+  data arrival time                                                  0.98
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  gen_state_regs[0].state_reg_share/state_reg[0][49]/CP (DFCNQD1LVT)
+                                                          0.00       1.00 r
+  library setup time                                     -0.02       0.98
+  data required time                                                 0.98
+  --------------------------------------------------------------------------
+  data required time                                                 0.98
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: mealy_fsm/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_state_regs[1].state_reg_share/state_reg[1][63]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_register_1   ZeroWireload          tcbn65lplvttc
+  state_register_0   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  state_register_3   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  state_register_2   ZeroWireload          tcbn65lplvttc
+  state_register_4   ZeroWireload          tcbn65lplvttc
+  state_register_5   ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[2]/CP (DFCNQD4LVT)          0.00 #     0.00 r
+  mealy_fsm/current_state_reg[2]/Q (DFCNQD4LVT)           0.13       0.13 r
+  mealy_fsm/U19/ZN (INVD2LVT)                             0.02       0.15 f
+  mealy_fsm/U17/ZN (ND2D2LVT)                             0.03       0.18 r
+  mealy_fsm/U56/ZN (OAI211D1LVT)                          0.04       0.22 f
+  mealy_fsm/sel_masked_round (fsm)                        0.00       0.22 f
+  U6343/ZN (INVD1LVT)                                     0.03       0.24 r
+  U5638/Z (CKBD4LVT)                                      0.04       0.29 r
+  U5505/ZN (CKND2LVT)                                     0.02       0.31 f
+  U5533/Z (BUFFD16LVT)                                    0.08       0.38 f
+  gen_no_changing.gen_sbox[8].u_sbox/sel_masked_round (ascon_sbox_d2_2)
+                                                          0.00       0.38 f
+  gen_no_changing.gen_sbox[8].u_sbox/U13/ZN (INVD6LVT)
+                                                          0.04       0.43 r
+  gen_no_changing.gen_sbox[8].u_sbox/U3/ZN (INVD3LVT)     0.04       0.46 f
+  gen_no_changing.gen_sbox[8].u_sbox/U183/ZN (OAI22D0LVT)
+                                                          0.11       0.58 r
+  gen_no_changing.gen_sbox[8].u_sbox/U253/ZN (IND2D0LVT)
+                                                          0.06       0.63 r
+  gen_no_changing.gen_sbox[8].u_sbox/U254/ZN (MUX2ND0LVT)
+                                                          0.06       0.69 f
+  gen_no_changing.gen_sbox[8].u_sbox/x_out_noMask[1] (ascon_sbox_d2_2)
+                                                          0.00       0.69 f
+  U9614/ZN (AOI22D0LVT)                                   0.09       0.78 r
+  U9615/Z (CKXOR2D0LVT)                                   0.09       0.87 r
+  gen_state_regs[1].state_reg_share/in_shifted_1bit[19] (state_register_4)
+                                                          0.00       0.87 r
+  gen_state_regs[1].state_reg_share/U553/ZN (INVD0LVT)
+                                                          0.02       0.89 f
+  gen_state_regs[1].state_reg_share/U558/ZN (OAI222D0LVT)
+                                                          0.07       0.96 r
+  gen_state_regs[1].state_reg_share/state_reg[1][63]/D (DFCNQD1LVT)
+                                                          0.00       0.96 r
+  data arrival time                                                  0.96
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  gen_state_regs[1].state_reg_share/state_reg[1][63]/CP (DFCNQD1LVT)
+                                                          0.00       1.00 r
+  library setup time                                     -0.03       0.97
+  data required time                                                 0.97
+  --------------------------------------------------------------------------
+  data required time                                                 0.97
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: mealy_fsm/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_state_regs[3].state_reg_share/state_reg[1][54]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_register_1   ZeroWireload          tcbn65lplvttc
+  state_register_0   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  state_register_3   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  state_register_2   ZeroWireload          tcbn65lplvttc
+  state_register_4   ZeroWireload          tcbn65lplvttc
+  state_register_5   ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[2]/CP (DFCNQD4LVT)          0.00 #     0.00 r
+  mealy_fsm/current_state_reg[2]/Q (DFCNQD4LVT)           0.13       0.13 r
+  mealy_fsm/U19/ZN (INVD2LVT)                             0.02       0.15 f
+  mealy_fsm/U17/ZN (ND2D2LVT)                             0.03       0.18 r
+  mealy_fsm/U56/ZN (OAI211D1LVT)                          0.04       0.22 f
+  mealy_fsm/sel_masked_round (fsm)                        0.00       0.22 f
+  U6343/ZN (INVD1LVT)                                     0.03       0.24 r
+  U5638/Z (CKBD4LVT)                                      0.04       0.29 r
+  U5534/ZN (INVD2LVT)                                     0.09       0.38 f
+  gen_no_changing.gen_sbox[1].u_sbox/sel_masked_round (ascon_sbox_d2_9)
+                                                          0.00       0.38 f
+  gen_no_changing.gen_sbox[1].u_sbox/U3/ZN (CKND4LVT)     0.06       0.43 r
+  gen_no_changing.gen_sbox[1].u_sbox/U4/ZN (INVD4LVT)     0.03       0.46 f
+  gen_no_changing.gen_sbox[1].u_sbox/U34/ZN (OAI22D0LVT)
+                                                          0.11       0.58 r
+  gen_no_changing.gen_sbox[1].u_sbox/U252/ZN (IND2D0LVT)
+                                                          0.06       0.63 r
+  gen_no_changing.gen_sbox[1].u_sbox/U253/ZN (MUX2ND0LVT)
+                                                          0.06       0.69 f
+  gen_no_changing.gen_sbox[1].u_sbox/x_out_noMask[3] (ascon_sbox_d2_9)
+                                                          0.00       0.69 f
+  U6240/ZN (AOI22D0LVT)                                   0.09       0.78 r
+  U9723/Z (CKXOR2D0LVT)                                   0.09       0.87 r
+  gen_state_regs[3].state_reg_share/in_shifted_1bit[12] (state_register_2)
+                                                          0.00       0.87 r
+  gen_state_regs[3].state_reg_share/U551/ZN (INVD0LVT)
+                                                          0.02       0.89 f
+  gen_state_regs[3].state_reg_share/U552/ZN (OAI222D0LVT)
+                                                          0.07       0.96 r
+  gen_state_regs[3].state_reg_share/state_reg[1][54]/D (DFCNQD1LVT)
+                                                          0.00       0.96 r
+  data arrival time                                                  0.96
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  gen_state_regs[3].state_reg_share/state_reg[1][54]/CP (DFCNQD1LVT)
+                                                          0.00       1.00 r
+  library setup time                                     -0.03       0.97
+  data required time                                                 0.97
+  --------------------------------------------------------------------------
+  data required time                                                 0.97
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: mealy_fsm/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_state_regs[0].state_reg_share/state_reg[0][55]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_register_1   ZeroWireload          tcbn65lplvttc
+  state_register_0   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_9    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_8    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_7    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_6    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_5    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_4    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_3    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_2    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_1    ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_0    ZeroWireload          tcbn65lplvttc
+  register_0         ZeroWireload          tcbn65lplvttc
+  state_register_3   ZeroWireload          tcbn65lplvttc
+  ascon_sbox_d2_10   ZeroWireload          tcbn65lplvttc
+  register_1         ZeroWireload          tcbn65lplvttc
+  state_register_2   ZeroWireload          tcbn65lplvttc
+  state_register_4   ZeroWireload          tcbn65lplvttc
+  state_register_5   ZeroWireload          tcbn65lplvttc
+  ascon_top          ZeroWireload          tcbn65lplvttc
+  fsm                ZeroWireload          tcbn65lplvttc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mealy_fsm/current_state_reg[2]/CP (DFCNQD4LVT)          0.00 #     0.00 r
+  mealy_fsm/current_state_reg[2]/Q (DFCNQD4LVT)           0.13       0.13 r
+  mealy_fsm/U4/ZN (ND2D1LVT)                              0.04       0.16 f
+  mealy_fsm/U52/Z (OR2D0LVT)                              0.07       0.23 f
+  mealy_fsm/U32/ZN (NR2D1LVT)                             0.05       0.28 r
+  mealy_fsm/U33/ZN (ND3D0LVT)                             0.06       0.34 f
+  mealy_fsm/U6/ZN (OAI211D2LVT)                           0.05       0.39 r
+  mealy_fsm/sel_padding (fsm)                             0.00       0.39 r
+  U6416/ZN (ND2D0LVT)                                     0.04       0.43 f
+  U5716/ZN (INR2XD0LVT)                                   0.06       0.49 r
+  U5621/ZN (ND2D1LVT)                                     0.04       0.54 f
+  U6418/ZN (ND2D1LVT)                                     0.05       0.59 r
+  U5827/ZN (INVD0LVT)                                     0.03       0.61 f
+  U5831/ZN (NR2XD0LVT)                                    0.06       0.67 r
+  U10768/ZN (ND2D0LVT)                                    0.04       0.71 f
+  U10769/ZN (MUX2ND0LVT)                                  0.06       0.77 f
+  U10771/ZN (AOI22D0LVT)                                  0.05       0.81 r
+  U10774/ZN (OAI211D0LVT)                                 0.06       0.87 f
+  gen_state_regs[0].state_reg_share/data_in[55] (state_register_5)
+                                                          0.00       0.87 f
+  gen_state_regs[0].state_reg_share/U1184/ZN (AOI22D0LVT)
+                                                          0.05       0.92 r
+  gen_state_regs[0].state_reg_share/U1185/ZN (OAI211D0LVT)
+                                                          0.06       0.98 f
+  gen_state_regs[0].state_reg_share/state_reg[0][55]/D (DFCNQD1LVT)
+                                                          0.00       0.98 f
+  data arrival time                                                  0.98
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  gen_state_regs[0].state_reg_share/state_reg[0][55]/CP (DFCNQD1LVT)
+                                                          0.00       1.00 r
+  library setup time                                     -0.02       0.98
+  data required time                                                 0.98
+  --------------------------------------------------------------------------
+  data required time                                                 0.98
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
