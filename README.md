@@ -35,7 +35,10 @@ make synthesis
 # 3) Post-synthesis gate-level simulation
 make post_synth_sim
 
-# 4) Clean everything
+# 4) FPGA bitstream (CW305)
+make fpgabitstream
+
+# 5) Clean everything
 make clean
 ```
 
@@ -88,6 +91,9 @@ The Makefile orchestrates the entire flow around the FuseSoC core
 * `make post_synth_sim`
   Runs **gate-level** simulation (using the netlist) through the FuseSoC target `postsynth_simulation`.
 
+*  `make fpgabitstream`
+  Builds the FPGA implementation and generates the bitstream via Vivado, using the FuseSoC target cw305-ascon defined in ascon.core
+
 * `make clean`
   Wipes `./build`, FuseSoC cache, and temporary files.
 
@@ -122,6 +128,7 @@ FPGA build targets can be added through FuseSoC (see `ascon.core`), but they’r
 
 * “`fusesoc` not found” → Activate the environment providing FuseSoC.
 * “`dc_shell` not found” → Source your Synopsys DC setup before `make synthesis`.
+* “`vivado` not found” → Add Vivado to your PATH before `make fpgabitstream`.
 * Differences in `diff_output.txt` → Check parameter consistency and recent RTL/TB edits.
 
 ---
