@@ -20,3 +20,4 @@ util/
 *.py
 *.sh
 alib-52/
+private/

@@ -6,7 +6,7 @@ MAKE                = make
 BUILD_DIR          ?= $(realpath .)/build
 CORE_NAME          ?= myascon:ascon_top:1.0.0
 
-# Path assoluto della repo corrente (dove sta il .core)
+# Absolute path of the repo (needed for main .core file)
 mkfile_path := $(shell dirname "$(realpath $(firstword $(MAKEFILE_LIST)))")
 $(info $$ You are executing from: $(mkfile_path))
 
@@ -20,107 +20,107 @@ FUSESOC := fusesoc --cores-root $(mkfile_path)
 .PHONY: print_targets
 print_targets:
 	@echo ""
-	@echo "🎯 Target disponibili:"
-	@echo "  make simulation_build        → build simulazione"
-	@echo "  make simulation_run          → run simulazione"
-	@echo "  make simulation_verify       → verifica risultati"
-	@echo "  make simulation              → tutto (build + run + verify)"
-	@echo "  make synthesis               → sintesi + update netlist + reports"
-	@echo "  make update_netlist          → copia netlist"
-	@echo "  make update_synth_reports    → copia reports"
-	@echo "  make post_synth_sim          → simulazione post-sintesi"
-	@echo "  make all                     → flow completo"
-	@echo "  make clean                   → pulizia"
+	@echo "🎯 Targets available:"
+	@echo "  make simulation_build        → build simulation"
+	@echo "  make simulation_run          → run simulation"
+	@echo "  make simulation_verify       → verify results"
+	@echo "  make simulation              → build + run + verify"
+	@echo "  make synthesis               → synthesis + update netlist + reports"
+	@echo "  make update_netlist          → copy netlist"
+	@echo "  make update_synth_reports    → copy reports"
+	@echo "  make post_synth_sim          → simulation post-synthesis"
+	@echo "  make all                     → complete flow"
+	@echo "  make clean                   → clean all"
 	@echo ""
 
-# Target 1 - Simulazione
+# Target 1 - simulation
 .PHONY: simulation_build
 simulation_build: .check-fusesoc
-	@echo "👉 Pulizia build e cache..."
+	@echo "👉 Clean build e cache..."
 	rm -rf $(BUILD_DIR)/myascon_ascon_top_1.0.0_0
 	rm -rf ~/.cache/fusesoc
-	@echo "👉 Avvio build simulazione..."
+	@echo "👉 Start build for simulation..."
 	$(FUSESOC) run --target=simulation --setup $(CORE_NAME)
 	$(FUSESOC) run --target=simulation --build $(CORE_NAME)
-	@echo "✅ Build simulazione completata."
+	@echo "✅ Build simulation completed."
 
 .PHONY: simulation_run
 simulation_run: .check-fusesoc
-	@echo "👉 Avvio simulazione..."
+	@echo "👉 Starting simulation..."
 	$(FUSESOC) run --target=simulation --run $(CORE_NAME)
-	@echo "✅ Simulazione completata."
+	@echo "✅ simulation completed."
 
 .PHONY: simulation_verify
 simulation_verify:
-	@echo "👉 Verifica rispetto al golden model..."
+	@echo "👉 Verify against golden model..."
 	python3 test_ascon.py > output.txt
-	@echo "👉 Confronto risultati:"
+	@echo "👉 Comparing results:"
 	@diff output.txt $(BUILD_DIR)/myascon_ascon_top_1.0.0_0/simulation-verilator/debug_output.txt > diff_output.txt || true
 	@if [ -s diff_output.txt ]; then \
-		echo "❌ Differenze trovate! Vedi ./diff_output.txt"; \
-		echo "Hai cambiato i parametri nel file ./tb/tb_auto.cpp? -> PAR e d devono essere uguali al file ./rtl/ascon_params.sv"; \
+		echo "❌ Found differnces! Check ./diff_output.txt"; \
+		echo "Have you changed the parameters in the ./tb/tb_auto.cpp file? -> PAR and d must be the same as in the ./rtl/ascon_params.sv file. \
 	else \
-		echo "✅ Perfetto, test superato con successo!"; \
+		echo "✅ test successfull!"; \
 	fi
 
 .PHONY: simulation
 simulation: simulation_build simulation_run simulation_verify
-	@echo "🎉 Simulazione completa terminata con successo!"
+	@echo "🎉 simulation completed and terminated successfully!"
 
-# Target 2 - Sintesi con Design Compiler
+# Target 2 - synthesis con Design Compiler
 .PHONY: synthesis
 synthesis: .check-dc
-	@echo "Avvio sintesi con Design Compiler..."
+	@echo "Starting synthesis with Design Compiler..."
 	$(FUSESOC) run --target=synthesis $(CORE_NAME)
-	@echo "✅ Sintesi completata."
+	@echo "✅ synthesis completed."
 	@$(MAKE) update_netlist
 	@$(MAKE) update_synth_reports
 
 .PHONY: update_netlist
 update_netlist:
-	@echo "Aggiorno netlist/ascon_top_syn.v..."
+	@echo "Updating netlist/ascon_top_syn.v..."
 	mkdir -p netlist
 	cp $(BUILD_DIR)/myascon_ascon_top_1.0.0_0/synthesis-design_compiler/netlist/ascon_top_syn.* netlist/
 	@echo "✅ Netlist aggiornata."
 
 .PHONY: update_synth_reports
 update_synth_reports:
-	@echo "Aggiorno report di sintesi..."
+	@echo "Updating synthesis reports..."
 	mkdir -p synth/report/new_report
 	rsync -av --delete $(BUILD_DIR)/myascon_ascon_top_1.0.0_0/synthesis-design_compiler/report/ synth/report/new_report/
 	@echo "✅ Report aggiornati."
 
-# Target 3 - Simulazione post-sintesi
+# Target 3 - simulation post-synthesis
 .PHONY: post_synth_sim
 post_synth_sim: .check-fusesoc update_netlist
-	@echo "Avvio simulazione post-sintesi..."
+	@echo "Avvio simulation post-synthesis..."
 	$(FUSESOC) run --target=postsynth_simulation $(CORE_NAME)
-	@echo "✅ Post-synthesis sim completata."
+	@echo "✅ Post-synthesis sim completed."
 
-# Target 4 - Pulizia
+# Target 4 - Clean
 .PHONY: clean
 clean:
-	@echo "👉 Pulizia completa..."
+	@echo "👉 Cleaning..."
 	rm -rf $(BUILD_DIR)
 	rm -rf ~/.cache/fusesoc
 	rm -f output.txt
-	@echo "✅ Pulizia completata."
+	@echo "✅ Clean completed."
 
 .PHONY: all
 all: synthesis post_synth_sim
-	@echo "Flow completo terminato con successo!"
+	@echo "All flow completed successfully!"
 
 # Utilities
 .PHONY: .check-fusesoc
 .check-fusesoc:
 	@if ! command -v fusesoc >/dev/null 2>&1; then \
-		echo "### ERROR: 'fusesoc' non trovato! Hai attivato l'environment giusto?"; \
+		echo "### ERROR: 'fusesoc' not found! Are you working in correct python environmnet ?"; \
 		exit 1; \
 	fi
 
 .PHONY: .check-dc
 .check-dc:
 	@if ! command -v dc_shell >/dev/null 2>&1; then \
-		echo "### ERROR: 'dc_shell' non trovato! È nel PATH? Hai attivato l'ambiente Design Compiler?"; \
+		echo "### ERROR: 'dc_shell' not found! Check if it's in the PATH."; \
 		exit 1; \
 	fi
