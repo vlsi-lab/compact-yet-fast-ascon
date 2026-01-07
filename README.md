@@ -1,8 +1,12 @@
-# 🛡️ MyASCON128-A — RTL Core + Automated Flow
+# 🛡️ Masked ASCON128-A — RTL Core + Automated Flow
 
-An RTL implementation of **ASCON-128** with a fully scripted flow for **simulation**, **ASIC synthesis**, and **post-synthesis verification**. Powered by **FuseSoC** + **Verilator** + **Synopsys Design Compiler**.
+This repository contains the SystemVerilog RTL implementation of **ASCON-128** with a fully scripted flow for **simulation**, **ASIC synthesis**, and **post-synthesis verification**. Powered by **FuseSoC** + **Verilator** + **Synopsys Design Compiler**.
 
----
+This architecture is described in:
+
+> Compact Yet Fast: An Efficient d-Order Masked Implementation of Ascon
+
+If you use this code in academic work, please cite the paper.
 
 ## 📦 Repository Layout (as in your screenshot)
 
