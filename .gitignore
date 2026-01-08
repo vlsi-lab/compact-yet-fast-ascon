@@ -21,3 +21,4 @@ util/
 *.sh
 alib-52/
 private/
+fusesoc.conf

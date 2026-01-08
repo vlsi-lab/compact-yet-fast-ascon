@@ -282,20 +282,7 @@ assign crypt_ready = 1'b1;
 assign crypt_busy = ascon_busy;
 
 
-`ifdef ASIP_IMPL
-    ascon ascon_asip(
-        .clk                (ascon_clk),
-        .rst_n              (ascon_key),
-        .start              (ascon_load),
-        .din                ({ascon_nonce, ascon_state}),
-        .number_rounds_in   ('d12),
-        .dout               (ascon_state),
-        .done               (ascon_done)    
-    );
-    assign crypt_done = ascon_done;
-    assign tio_trigger = start_capture;
-`else
-    // divisione chiave e nonce
+// divisione chiave e nonce
 wire [63:0] key2   = crypt_key[127:64];
 wire [63:0] key1   = crypt_key[63:0];
 wire [63:0] nonce2 = crypt_noncein[127:64];
