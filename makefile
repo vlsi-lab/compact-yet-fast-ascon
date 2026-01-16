@@ -58,7 +58,7 @@ simulation_verify:
 	@diff output.txt $(BUILD_DIR)/myascon_ascon_top_1.0.0_0/simulation-verilator/debug_output.txt > diff_output.txt || true
 	@if [ -s diff_output.txt ]; then \
 		echo "❌ Found differnces! Check ./diff_output.txt"; \
-		echo "Have you changed the parameters in the ./tb/tb_auto.cpp file? -> PAR and d must be the same as in the ./rtl/ascon_params.sv file. \
+		echo "Have you changed the parameters in the ./tb/tb_auto.cpp file? -> PAR and d must be the same as in the ./rtl/ascon_params.sv file."; \
 	else \
 		echo "✅ test successfull!"; \
 	fi
